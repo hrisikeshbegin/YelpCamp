@@ -25,7 +25,7 @@ const campgroundsRoutes = require('./routes/campgrounds');
 const reviewsRoutes = require('./routes/reviews');
 const mongoSanitize = require('express-mongo-sanitize');
 const helmet = require('helmet');
-const dbUrl = 'mongodb://localhost:27017/yelp-camp'; //process.env.DB_URL
+const dbUrl = process.env.DB_URL; //process.env.DB_URL
 const MongoStore = require('connect-mongo');
 mongoose.connect(dbUrl,{
 });
@@ -49,7 +49,7 @@ const store = MongoStore.create({
     mongoUrl: dbUrl,
     touchAfter: 24 * 60 * 60,
     crypto: {
-        secret: 'thisshouldbeabettersecret!'
+        secret: 'youneverknowthissecret'
     }
 });
 
