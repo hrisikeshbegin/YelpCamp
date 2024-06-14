@@ -13,6 +13,10 @@ module.exports.renderNewForm = (req,res) => {
     res.render('campgrounds/new');
 }
 
+module.exports.renderContactUs = async(req,res) => {
+    res.render('campgrounds/contactUs.ejs');
+}
+
 module.exports.createCampground = async (req,res,next) => {
     const geoData = await geocoder.forwardGeocode({
         query: req.body.campground.location,
