@@ -45,10 +45,10 @@ Follow these steps to set up the project locally:
 
 3. Set up the environment variables:
 
-Create a .env file in the root directory.
-Add the following variables:
-makefile
-```bash
+   Create a .env file in the root directory.
+   Add the following variables:
+   makefile
+   ```bash
   CLOUDINARY_CLOUD_NAME=<your-cloudinary-cloud-name>
   CLOUDINARY_API_KEY=<your-cloudinary-api-key>
   CLOUDINARY_API_SECRET=<your-cloudinary-api-secret>
