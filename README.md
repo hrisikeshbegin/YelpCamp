@@ -28,8 +28,6 @@ This project is built with Node.js, Express, MongoDB, and EJS for templating.
 - Campground data validation using Joi.
 - Secure application with Helmet, data sanitization, and more.
 
-## Demo
-Check out the live application [here](https://yelpcampindia.onrender.com/).
 
 ## Installation
 Follow these steps to set up the project locally:
